@@ -35,7 +35,7 @@
     "asset:img": "node_modules/imagemin-cli/cli.js src/img/* -o dist/img",
     "scss": "node-sass --source-map=true --source-map-embed src/scss/styles.scss src/css/styles.css",
     "scss:w": "npm run scss -- -w",
-    "postcss": "node_modules/postcss-cli/bin/postcss -c postcss.json",
+    "postcss": "postcss ./src/css/*.css -d ./dist/css -c postcss.config.js",
     "html": "node_modules/html-minifier/cli.js -c html-minifier.json --html5 --file-ext=html --input-dir=src/ --output-dir=dist/",
     "bsync": "browser-sync start -s 'src' -f 'src'"
   }
