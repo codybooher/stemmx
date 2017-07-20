@@ -1,0 +1,13 @@
+{
+  "use": [
+    "postcss-uncss",
+    "cssnano"
+  ],
+  "input": "./src/css/styles.css",
+  "output": "./dist/css/styles.css",
+  "local-plugins": true,
+  "map": { "inline": false },
+  "postcss-uncss": {
+    "html": [ "./dist/*.html" ]
+  }
+}
