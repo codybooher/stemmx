@@ -12,6 +12,7 @@
     "html-minifier": "^3.5.2",
     "imagemin-cli": "^3.0.0",
     "node-sass": "^4.5.3",
+    "npm-run-all": "^4.0.2",
     "postcss-cli": "^4.1.0",
     "postcss-uncss": "^0.15.0",
     "rimraf": "^2.6.1",
