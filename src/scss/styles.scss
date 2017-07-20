@@ -1,0 +1,24 @@
+@import 'minireset.css/minireset.sass';
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 3em;
+
+  .logo {
+    max-width: 100px;
+    position: relative;
+  }
+}
+
+ul.nav-list li {
+  display: inline-block;
+}
