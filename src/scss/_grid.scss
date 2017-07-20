@@ -1,0 +1,30 @@
+/*
+* Dead Simple Grid (c) 2015 Vladimir Agafonkin
+* https://github.com/mourner/dead-simple-grid/blob/gh-pages/css/grid.css
+*/
+.row .row { margin:  0 -1em; }
+.col      { padding: 0  1em; }
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media only screen {
+  .col {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .w20 { width: 20%; }
+  .w25 { width: 25%; }
+  .w30 { width: 30%; }
+  .w40 { width: 40%; }
+  .w50 { width: 50%; }
+  .w60 { width: 60%; }
+  .w70 { width: 70%; }
+  .w75 { width: 75%; }
+  .w80 { width: 80%; }
+  .w100 { width: 100%; }
+}
