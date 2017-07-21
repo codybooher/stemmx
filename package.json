@@ -28,9 +28,9 @@
     "url": "https://github.com/codybooher/stemmx.git"
   },
   "scripts": {
-    "start": "run-p scss:w bsync",
-    "build": "run-p build:css build:js asset:img",
-    "build:html": "pug src --out ./dist",
+    "start": "run-p html:dev scss:w bsync",
+    "build": "run-p build:html build:css build:js asset:img",
+    "build:html": "npm run pug -- --out ./dist",
     "build:css": "run-s html scss postcss",
     "build:js": "uglifyjs-folder src/js/ -e -x .js -o dist/js/",
     "clean": "rimraf node_modules/ dist/*",
@@ -39,6 +39,8 @@
     "scss:w": "npm run scss -- -w",
     "postcss": "postcss ./src/css/*.css -d ./dist/css -c postcss.config.js",
     "html": "node_modules/html-minifier/cli.js -c html-minifier.json --html5 --file-ext=html --input-dir=src/ --output-dir=dist/",
+    "html:pug": "pug src",
+    "html:dev": "npm run html:pug -- -w",
     "bsync": "browser-sync start -s 'src' -f 'src'",
     "bsync:dist": "browser-sync start -s 'dist' -f 'dist'"
   },
