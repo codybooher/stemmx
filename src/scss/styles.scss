@@ -114,6 +114,7 @@ ul.nav-list li {
 
 .bg1 {
   background-image: url('/img/bg1.jpg');
+  background-position: center center;
   background-size: cover;
   @media screen and (max-width: 768px) {
     background-position: bottom right 20%;
