@@ -18,14 +18,13 @@ h4 { font-size: 1.4rem; }
 h5 { font-size: 1.2rem; }
 h6 { font-size: 1rem; }
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
   letter-spacing: 1px;
   line-height: 1.1;
   margin: 1.1rem 0;
 }
 
 p { margin-top: 1rem; }
-
+ul { list-style: disc; }
 footer {
   background-color: #222;
   color: rgba(255, 255, 255, 0.8);
@@ -93,16 +92,22 @@ ul.nav-list li {
   margin: 0 auto;
 }
 
-.curve {
+
+.curve, .curve-bottom {
   position: relative;
-  &::before {
-    content: '';
-    display: block;
-    height: 2vmax;
-    background: url('/img/curve.svg') center center;
-    background-size: 100% 2vmax;
-    position: absolute;
-    top: -2vmax;
-    width: 100%;
-  }
+}
+.curve::before,
+.curve-bottom::after {
+  content: '';
+  display: block;
+  height: 2vmax;
+  background: url('/img/curve.svg') center center;
+  background-size: 100% 2vmax;
+  position: absolute;
+  width: 100%;
+}
+.curve::before { top: -2vmax; }
+.curve-bottom::after {
+  bottom: -2vmax;
+  transform: rotate(180deg);
 }
