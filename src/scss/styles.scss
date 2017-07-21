@@ -26,6 +26,12 @@ h1, h2, h3, h4, h5, h6 {
 
 p { margin-top: 1rem; }
 
+footer {
+  background-color: #222;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 15px 0;
+}
+
 .logo-wrap {
   line-height: 0;
 }
@@ -75,7 +81,7 @@ ul.nav-list li {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px 0;
+  padding: 50px 0 75px;
 }
 
 .hero-img {
@@ -85,4 +91,18 @@ ul.nav-list li {
 #partner-device {
   max-width: 320px;
   margin: 0 auto;
+}
+
+.curve {
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    height: 2vmax;
+    background: url('/img/curve.svg') center center;
+    background-size: 100% 2vmax;
+    position: absolute;
+    top: -2vmax;
+    width: 100%;
+  }
 }
