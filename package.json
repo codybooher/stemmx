@@ -15,6 +15,7 @@
     "npm-run-all": "^4.0.2",
     "postcss-cli": "^4.1.0",
     "postcss-uncss": "^0.15.0",
+    "pug-cli": "^1.0.0-alpha6",
     "rimraf": "^2.6.1",
     "uglifyjs-folder": "^1.1.0",
     "uncss": "^0.15.0"
@@ -29,6 +30,7 @@
   "scripts": {
     "start": "run-p scss:w bsync",
     "build": "run-p build:css build:js asset:img",
+    "build:html": "pug src --out ./dist",
     "build:css": "run-s html scss postcss",
     "build:js": "uglifyjs-folder src/js/ -e -x .js -o dist/js/",
     "clean": "rimraf node_modules/ dist/*",
@@ -37,7 +39,8 @@
     "scss:w": "npm run scss -- -w",
     "postcss": "postcss ./src/css/*.css -d ./dist/css -c postcss.config.js",
     "html": "node_modules/html-minifier/cli.js -c html-minifier.json --html5 --file-ext=html --input-dir=src/ --output-dir=dist/",
-    "bsync": "browser-sync start -s 'src' -f 'src'"
+    "bsync": "browser-sync start -s 'src' -f 'src'",
+    "bsync:dist": "browser-sync start -s 'dist' -f 'dist'"
   },
   "dependencies": {
     "minireset.css": "0.0.3"
