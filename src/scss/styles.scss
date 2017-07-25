@@ -139,8 +139,11 @@ $curve-size: 2.5vmax;
 
 $grey: #F5F5F5;
 section.story {
-  padding: 1rem 0 2.5rem;
-    &:nth-child(odd) {
+  padding: 1rem 0;
+  &:not(:last-child) {
+    padding-bottom: 3rem;
+  }
+  &:nth-child(odd) {
     background-color: $grey;
       &::before {
         background: url('data:image/svg+xml;charset=utf-8,<svg width="1425" height="56" xmlns="http://www.w3.org/2000/svg"><path d="M.6 56C201.06 20.75 446.88 0 712.5 0s511.45 20.75 711.9 56H.6z" fill="#{$grey}" fill-rule="evenodd"/></svg>') center center;
