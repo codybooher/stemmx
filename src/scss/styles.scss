@@ -95,7 +95,7 @@ ul.nav-list li {
   margin: 0 auto;
 }
 
-
+$curve-size: 2.5vmax;
 .curve, .curve-bottom {
   background-color: $white;
   position: relative;
@@ -104,15 +104,15 @@ ul.nav-list li {
 .curve-bottom::after {
   content: '';
   display: block;
-  height: 2vmax;
+  height: $curve-size;
   background: url('data:image/svg+xml;charset=utf-8,<svg width="1425" height="56" xmlns="http://www.w3.org/2000/svg"><path d="M.6 56C201.06 20.75 446.88 0 712.5 0s511.45 20.75 711.9 56H.6z" fill="#{$white}" fill-rule="evenodd"/></svg>') center center;
-  background-size: 100% 2vmax;
+  background-size: 100% $curve-size;
   position: absolute;
   width: 100%;
 }
-.curve::before { top: -2vmax; }
+.curve::before { top: -$curve-size; }
 .curve-bottom::after {
-  bottom: -2vmax;
+  bottom: -$curve-size;
   transform: rotate(180deg);
 }
 
@@ -144,7 +144,7 @@ section.story {
     background-color: $grey;
       &::before {
         background: url('data:image/svg+xml;charset=utf-8,<svg width="1425" height="56" xmlns="http://www.w3.org/2000/svg"><path d="M.6 56C201.06 20.75 446.88 0 712.5 0s511.45 20.75 711.9 56H.6z" fill="#{$grey}" fill-rule="evenodd"/></svg>') center center;
-        background-size: 100% 2vmax;
+        background-size: 100% $curve-size;
       }
   }
 }
