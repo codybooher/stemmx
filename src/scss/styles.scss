@@ -2,6 +2,8 @@
 @import 'grid';
 @import 'util';
 
+$white: #fff;
+
 :root {
   font-size: 18px;
 }
@@ -94,6 +96,7 @@ ul.nav-list li {
 
 
 .curve, .curve-bottom {
+  background-color: $white;
   position: relative;
 }
 .curve::before,
@@ -101,7 +104,7 @@ ul.nav-list li {
   content: '';
   display: block;
   height: 2vmax;
-  background: url('/img/curve.svg') center center;
+  background: url('data:image/svg+xml;charset=utf-8,<svg width="1425" height="56" xmlns="http://www.w3.org/2000/svg"><path d="M.6 56C201.06 20.75 446.88 0 712.5 0s511.45 20.75 711.9 56H.6z" fill="#{$white}" fill-rule="evenodd"/></svg>') center center;
   background-size: 100% 2vmax;
   position: absolute;
   width: 100%;
@@ -113,8 +116,7 @@ ul.nav-list li {
 }
 
 .bg1 {
-  background-image: url('/img/bg1.jpg');
-  background-position: center center;
+  background: url('/img/bg1.jpg') center center;
   background-size: cover;
   @media screen and (max-width: 768px) {
     background-position: bottom right 20%;
@@ -122,4 +124,43 @@ ul.nav-list li {
 }
 .bg1-spacer {
   padding-bottom: 75vh;
+}
+
+.hero-stories {
+  background: url('/img/bg-stories.jpg') top center;
+  background-size: cover;
+}
+
+$grey: #F5F5F5;
+section.story {
+  padding: 1rem 0 2.5rem;
+    &:nth-child(odd) {
+    background-color: $grey;
+      &::before {
+        background: url('data:image/svg+xml;charset=utf-8,<svg width="1425" height="56" xmlns="http://www.w3.org/2000/svg"><path d="M.6 56C201.06 20.75 446.88 0 712.5 0s511.45 20.75 711.9 56H.6z" fill="#{$grey}" fill-rule="evenodd"/></svg>') center center;
+        background-size: 100% 2vmax;
+      }
+  }
+}
+
+.profile {
+  &-img {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  &-heading {
+    position: relative;
+    &::after {
+      border-bottom: 1px solid #8CC63F;
+      border-left: 1px solid #8CC63F;
+      bottom: -4px;
+      content: '';
+      width: 100%;
+      height: 100%;
+      left: -8px;
+      position: absolute;
+    }
+  }
 }
