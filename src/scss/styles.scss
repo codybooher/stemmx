@@ -29,9 +29,8 @@ h1, h2, h3, h4, h5, h6 {
 p { margin-top: 1rem; }
 ul { list-style: disc; }
 footer {
-  background-color: #222;
-  color: rgba(255, 255, 255, 0.8);
   padding: 15px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .logo-wrap {
@@ -172,4 +171,9 @@ section.story {
       position: absolute;
     }
   }
+}
+.contactFormInput {
+  height: 40px;
+  width:30%;
+  border: solid 1px #00b9f1;
 }

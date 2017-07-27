@@ -1,0 +1,18 @@
+extends _layout
+
+block content
+  section.hero
+    img.hero-img(src='img/stem-top-logo.png')
+  section.curve
+    .container.small.row
+      h2.col.w100.text-center.v-margin Contact Us
+    div
+      form.text-center.v-margin-medium
+        .form-group
+          input#name.contactFormInput.v-margin(type='text', placeholder='Full Name')
+        .form-group
+          input#email.contactFormInput.v-margin(type='email', placeholder='Email')
+        .form-group
+          input#message.contactFormMessage(type='text', placeholder='Message')
+        button.btn.stem-btn(type='submit') Submit
+
