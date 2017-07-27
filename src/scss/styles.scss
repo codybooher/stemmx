@@ -90,6 +90,14 @@ ul.nav-list li {
   max-width: 280px;
 }
 
+#play {
+  background: transparent;
+  border: none;
+  &:active {
+    transform: translateY(3px);
+  }
+  svg { display: block; }
+}
 #partner-device {
   max-width: 320px;
   margin: 0 auto;
@@ -123,10 +131,6 @@ $curve-size: 2.5vmax;
     background-position: bottom right 20%;
   }
 }
-.bg1-spacer {
-  padding-bottom: 75vh;
-}
-
 .hero-stories {
   background: url('/img/bg-stories.jpg') top center;
   background-size: cover;
@@ -170,6 +174,39 @@ section.story {
       height: 100%;
       left: -8px;
       position: absolute;
+    }
+  }
+}
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective-origin-x: 100%;
+  .group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+  }
+  .layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin-x: 100%;
+    &.base, &.back {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &.base {
+      transform: translateZ(0);
+    }
+    &.back {
+      transform: translateZ(-1px) scale(2);
+      background-color: lightgreen;
     }
   }
 }
