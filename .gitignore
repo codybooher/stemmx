@@ -60,3 +60,4 @@ typings/
 # dist
 dist/
 src/.DS_Store
+.DS_Store
