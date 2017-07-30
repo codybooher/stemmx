@@ -3,6 +3,13 @@ $white: #fff;
 $grey: #F5F5F5;
 $green: #8CC63F;
 $blue: #00B9F0;
+$desktop-width: 768px;
+
+@mixin desktop {
+  @media screen and (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
 
 @import 'minireset.css/minireset.sass';
 @import 'grid';
