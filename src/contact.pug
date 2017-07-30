@@ -6,13 +6,9 @@ block content
   section.curve
     .container.small.row
       h2.col.w100.text-center.v-margin Contact Us
-    div
-      form.text-center.v-margin-medium
-        .form-group
-          input#name.contactFormInput.v-margin(type='text', placeholder='Full Name')
-        .form-group
-          input#email.contactFormInput.v-margin(type='email', placeholder='Email')
-        .form-group
-          input#message.contactFormMessage(type='text', placeholder='Message')
-        button.btn.stem-btn(type='submit') Submit
+      form.contact-form.text-center.v-margin-medium
+        input#name(placeholder='Full Name')
+        input#email(type='email', placeholder='Email')
+        textarea#message(placeholder='Message', rows=5)
+        button.btn.v-margin Submit
 
