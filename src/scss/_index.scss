@@ -1,0 +1,15 @@
+#play {
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+  &:active {
+    transform: translateY(3px);
+  }
+  svg { display: block; }
+}
+
+#iphone-index {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}

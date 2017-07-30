@@ -2,6 +2,9 @@
 @import 'grid';
 @import 'util';
 
+// Page specific styles
+@import 'index';
+
 $white: #fff;
 
 :root {
@@ -89,15 +92,6 @@ ul.nav-list li {
   max-width: 280px;
 }
 
-#play {
-  background: transparent;
-  border: none;
-  text-transform: uppercase;
-  &:active {
-    transform: translateY(3px);
-  }
-  svg { display: block; }
-}
 #partner-device,
 .iphone-layout {
   max-width: 320px;
@@ -183,10 +177,4 @@ section.story {
   height: 40px;
   width:30%;
   border: solid 1px #00b9f1;
-}
-
-#iphone-index {
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
 }
