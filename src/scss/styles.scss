@@ -2,18 +2,17 @@
 @import 'grid';
 @import 'util';
 
+// Colors
 $white: #fff;
+$grey: #F5F5F5;
 
-:root {
-  font-size: 18px;
-}
+:root { font-size: 18px; }
 body {
   color: #002056;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
 }
-
 h1 { font-size: 2rem; }
 h2 { font-size: 1.8rem; }
 h3 { font-size: 1.6rem; }
@@ -25,16 +24,11 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   margin: 1.1rem 0;
 }
-
 p { margin-top: 1rem; }
 ul { list-style: disc; }
 footer {
   padding: 15px 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.logo-wrap {
-  line-height: 0;
 }
 
 .container {
@@ -57,7 +51,7 @@ footer {
   border-bottom: 1px solid rgba(0,0,0,.1);
   justify-content: space-between;
   height: 3rem;
-
+  .logo-wrap { line-height: 0; }
   .logo {
     max-width: 100px;
     position: relative;
