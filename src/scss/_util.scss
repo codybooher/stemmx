@@ -1,6 +1,7 @@
 .text-center { text-align: center; }
 .text-light { font-weight: 300; }
-.text-white { color: #fff; }
+.text-white { color: $white; }
+.text-blue { color: $blue; }
 
 .v-margin {
   margin-top: 1rem;

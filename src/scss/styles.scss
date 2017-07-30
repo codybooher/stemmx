@@ -1,11 +1,12 @@
-@import 'minireset.css/minireset.sass';
-@import 'grid';
-@import 'util';
-
 // Colors
 $white: #fff;
 $grey: #F5F5F5;
 $green: #8CC63F;
+$blue: #00B9F0;
+
+@import 'minireset.css/minireset.sass';
+@import 'grid';
+@import 'util';
 
 :root { font-size: 18px; }
 body {
