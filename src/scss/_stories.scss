@@ -1,0 +1,47 @@
+
+.hero-stories {
+  background: url('/img/bg-stories.jpg') top center;
+  background-size: cover;
+  padding: 1rem 0 2.5rem;
+  h2 {
+    color: $white;
+    line-height: 1.2;
+  }
+}
+
+$grey: #F5F5F5;
+section.story {
+  padding: 1rem 0;
+  &:not(:last-child) {
+    padding-bottom: 3rem;
+  }
+  &:nth-child(odd) {
+    background-color: $grey;
+    &::before {
+      background: url('data:image/svg+xml;charset=utf-8,<svg width="1425" height="56" xmlns="http://www.w3.org/2000/svg"><path d="M.6 56C201.06 20.75 446.88 0 712.5 0s511.45 20.75 711.9 56H.6z" fill="#{$grey}" fill-rule="evenodd"/></svg>') center center;
+      background-size: 100% $curve-size;
+    }
+  }
+}
+
+.profile {
+  &-img {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  &-heading {
+    position: relative;
+    &::after {
+      border-bottom: 1px solid #8CC63F;
+      border-left: 1px solid #8CC63F;
+      bottom: -4px;
+      content: '';
+      width: 100%;
+      height: 100%;
+      left: -8px;
+      position: absolute;
+    }
+  }
+}
