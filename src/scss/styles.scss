@@ -116,6 +116,13 @@ $curve-size: 2.5vmax;
   border: solid 1px #00b9f1;
 }
 
+.badge > img {
+  height: 40px;
+}
+.badge-block .badge:not(:first-child) {
+  margin-left: 1rem;
+}
+
 // Page specific styles
 @import 'index';
 @import 'about';
