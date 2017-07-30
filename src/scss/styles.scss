@@ -98,7 +98,8 @@ ul.nav-list li {
   }
   svg { display: block; }
 }
-#partner-device {
+#partner-device,
+.iphone-layout {
   max-width: 320px;
   margin: 0 auto;
 }
@@ -182,4 +183,10 @@ section.story {
   height: 40px;
   width:30%;
   border: solid 1px #00b9f1;
+}
+
+#iphone-index {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
