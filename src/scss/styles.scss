@@ -116,11 +116,11 @@ $curve-size: 2.5vmax;
   border: solid 1px #00b9f1;
 }
 
-.badge > img {
-  height: 40px;
-}
-.badge-block .badge:not(:first-child) {
-  margin-left: 1rem;
+.badge {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  > img { height: 40px; }
 }
 
 // Page specific styles

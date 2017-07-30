@@ -1,14 +1,24 @@
+$iphone-offset: 25vh;
+
+.hero-index {
+  background-color: #00B9F0;
+  padding: 25px 0 $iphone-offset;
+}
+
 #play {
   background: transparent;
   border: none;
+  left: calc(50% - 30px); // half of svg size
+  padding: 0;
+  position: absolute;
   text-transform: uppercase;
-  &:active {
-    transform: translateY(3px);
-  }
+  top: -(73px - 30px + 13px); // button size - (half of svg size) + text height
+  &:active { transform: translateY(3px); }
   svg { display: block; }
 }
 
 #iphone-index {
+  margin-top: -($iphone-offset * .75);
   @media screen and (max-width: 768px) {
     display: none;
   }
