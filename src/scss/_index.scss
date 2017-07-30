@@ -10,6 +10,7 @@ $iphone-offset: 25vh;
 #play {
   background: transparent;
   border: none;
+  display: none;
   left: calc(50% - 30px); // half of svg size
   padding: 0;
   position: absolute;
