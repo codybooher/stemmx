@@ -5,6 +5,7 @@
 // Colors
 $white: #fff;
 $grey: #F5F5F5;
+$green: #8CC63F;
 
 :root { font-size: 18px; }
 body {
@@ -26,9 +27,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 p { margin-top: 1rem; }
 ul { list-style: disc; }
+input,
+input[type="text"],
+input[type="email"],
+textarea {
+  border: solid 1px #00b9f1;
+  display: block;
+  font-size: 1rem;
+  margin: .5rem 0;
+  padding: .5rem;
+  width: 100%;
+}
 footer {
   padding: 15px 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.btn {
+  background-color: $green;
+  border: none;
+  color: $white;
+  font-size: 1rem;
+  padding: .5rem 1.5rem;
 }
 
 .container {
@@ -110,12 +129,6 @@ $curve-size: 2.5vmax;
   transform: rotate(180deg);
 }
 
-.contactFormInput {
-  height: 40px;
-  width:30%;
-  border: solid 1px #00b9f1;
-}
-
 .badge {
   display: inline-block;
   margin-right: 1rem;
@@ -127,3 +140,4 @@ $curve-size: 2.5vmax;
 @import 'index';
 @import 'about';
 @import 'stories';
+@import 'contact';
