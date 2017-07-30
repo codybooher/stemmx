@@ -4,6 +4,7 @@
 
 // Page specific styles
 @import 'index';
+@import 'about';
 
 $white: #fff;
 
@@ -119,14 +120,6 @@ $curve-size: 2.5vmax;
   transform: rotate(180deg);
 }
 
-.bg1 {
-  background: url('/img/bg1.jpg') center center;
-  background-size: cover;
-  @media screen and (max-width: 768px) {
-    background-position: left top;
-    background-size: 300% auto;
-  }
-}
 .hero-stories {
   background: url('/img/bg-stories.jpg') top center;
   background-size: cover;
