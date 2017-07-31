@@ -1,11 +1,13 @@
 header.header.container
   a.logo-wrap.page-scroll(href='#page-top')
     img.logo(src='img/logo-sm.png')
-  nav
-    ul.nav-list
-      li
-        a.page-scroll(href='#download') Download
-      li
-        a.page-scroll(href='#features') Features
-      li
-        a.page-scroll(href='#contact') Contact
+  button#menu-toggle.toggle
+  nav#menu
+    a(href='#download') Download
+    a(href='#features') Features
+    a(href='#contact') Contact
+    .container.download
+      a.badge(href="/bleh")
+        img(src="/img/app-store-badge.svg", alt="Download on the App Store")
+      a.badge(href="/bleh")
+        img(src="/img/google-play-badge.svg", alt="Get it on Google Play")
