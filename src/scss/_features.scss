@@ -1,8 +1,14 @@
 .hero-features {
-  background: url('/img/bg-features.jpg') center/cover, linear-gradient(135deg, rgba(118,203,197,1) 0%,rgba(217,198,168,1) 100%);
+  background: url('/img/bg-features.jpg'), linear-gradient(135deg, rgba(118,203,197,1) 0%,rgba(217,198,168,1) 100%);
+  background-position: top left;
+  background-size: cover;
+  @include desktop {
+    background-position: center;
+  }
 }
 .feature-set {
   padding: 1.5rem 0 4rem;
+  margin: 0 auto;
   max-width: 325px;
   h2 {
     color: $white;
