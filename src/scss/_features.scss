@@ -57,3 +57,21 @@
     &.advmanufacturing { background-position:0 99.5%; }
   }
 }
+
+.content-feature { padding: 2rem 0; }
+.content-lrg-feature { padding: 3rem 0; }
+
+.bg-feature-1 {
+  background-image: linear-gradient(-180deg, #00B9F1 38%, #3EBFC6 100%);
+}
+.beta-heading {
+  color: $green;
+  font-weight: 300;
+}
+$iphone-features-offset: 350px;
+
+#iphone-features {
+  margin-bottom: -($iphone-features-offset);
+  display: none;
+  @include desktop { display: block; }
+}

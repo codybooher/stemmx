@@ -5,6 +5,7 @@ $green: #8CC63F;
 $blue: #00B9F0;
 $blue-alt: rgba(#002056, .95);
 $red: #EC1A3A;
+$green: #7ED321;
 $desktop-width: 768px;
 
 @mixin desktop {
@@ -119,6 +120,9 @@ $curve-size: 2.5vmax;
   margin-top: 1rem;
   > img { height: 40px; }
 }
+
+// Device fix
+.device-mockup > .device { z-index: 1; }
 
 @import 'header';
 
