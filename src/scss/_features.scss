@@ -1,9 +1,9 @@
 .hero-features {
-  background: linear-gradient(135deg, rgba(118,203,197,1) 0%,rgba(217,198,168,1) 100%);
+  background: url('/img/bg-features.jpg') center/cover, linear-gradient(135deg, rgba(118,203,197,1) 0%,rgba(217,198,168,1) 100%);
 }
 .feature-set {
   padding: 1.5rem 0 4rem;
-  width: 325px;
+  max-width: 325px;
   h2 {
     color: $white;
     margin: 0;
