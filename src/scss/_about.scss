@@ -1,8 +1,26 @@
-.bg1 {
-  background: url('/img/bg1.jpg') left top;
+.bg-about {
+  background: url('/img/bg-about.jpg') left top, linear-gradient(135deg, rgba(187,213,196,1) 0%,rgba(212,201,171,1) 100%);
   background-size: 200% 100%;
   @media screen and (min-width: 768px) {
     background-position: center;
     background-size: cover;
   }
+}
+.list-offerings {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5rem 0;
+  @include desktop {
+    flex-direction: row;
+  }
+}
+.img-about-1 {
+  display: block;
+  height: auto;
+  margin: 1rem 2rem;
+  max-height: 150px;
+  max-width: 150px;
+  width: auto;
 }

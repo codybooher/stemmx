@@ -37,7 +37,14 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1.1rem 0;
 }
 p { margin-top: 1rem; }
-ul { list-style: disc; }
+ul {
+  list-style: none inside;
+  li::before {
+      content: "\2022";
+      margin-right: 8px;
+      user-select: none;
+  }
+}
 input,
 input[type="text"],
 input[type="email"],
@@ -116,8 +123,11 @@ $curve-size: 2.5vmax;
 
 .badge {
   display: inline-block;
-  margin-right: 1rem;
   margin-top: 1rem;
+  &:not(:last-of-type) { margin-right: .5rem; }
+  @include desktop {
+    &:not(:last-of-type) { margin-right: 1rem; }
+  }
   > img { height: 40px; }
 }
 

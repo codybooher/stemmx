@@ -44,7 +44,7 @@
   .img-sprite {
     background-image:url("/img/sprite-features.png");
     background-size:100% 303%;
-    max-width:112px;
+    max-width: 112px;
     width: 50px;
     &:after {
       content:"";
@@ -58,8 +58,8 @@
   }
 }
 
-.content-feature { padding: 2rem 0; }
-.content-lrg-feature { padding: 3rem 0; }
+.content-question { padding: 3rem 0; }
+.content-download { padding: 3rem 0 1rem; }
 
 .bg-feature-1 {
   background-image: linear-gradient(-180deg, #00B9F1 38%, #3EBFC6 100%);
@@ -68,10 +68,10 @@
   color: $green;
   font-weight: 300;
 }
-$iphone-features-offset: 350px;
+$iphone-features-offset: 300px;
 
 #iphone-features {
-  margin-bottom: -($iphone-features-offset);
+  margin-top: -($iphone-features-offset);
   display: none;
   @include desktop { display: block; }
 }
