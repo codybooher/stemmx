@@ -6,3 +6,21 @@
     background-size: cover;
   }
 }
+.list-offerings {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5rem 0;
+  @include desktop {
+    flex-direction: row;
+  }
+}
+.img-about-1 {
+  display: block;
+  height: auto;
+  margin: 1rem 2rem;
+  max-height: 150px;
+  max-width: 150px;
+  width: auto;
+}
