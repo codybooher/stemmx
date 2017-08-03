@@ -1,9 +1,10 @@
-.text-center {
-  text-align: center;
-}
-.text-light {
-  font-weight: 300;
-}
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-light { font-weight: 300; }
+.text-lrg { font-size: 2rem; }
+.text-white { color: $white; }
+.text-blue { color: $blue; }
+.text-red { color: $red; }
 
 .v-margin {
   margin-top: 1rem;
@@ -16,4 +17,14 @@
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 700px;
+  &-medium { max-width: 850px; }
+  &-large { max-width: 1170px; }
 }

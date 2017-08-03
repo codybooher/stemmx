@@ -1,0 +1,95 @@
+.no-scroll { overflow: hidden; }
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  justify-content: space-between;
+  height: 3rem;
+  #menu-toggle {
+    background: transparent;
+    border: none;
+    padding: 5px;
+    &:not(.open)::before {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1792" height="1792"><path d="M1664 1344v128q0 26-19 45t-45 19H192q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19H192q-26 0-45-19t-19-45V832q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19H192q-26 0-45-19t-19-45V320q0-26 19-45t45-19h1408q26 0 45 19t19 45z"/></svg>');
+      background-size: cover;
+      content: '';
+      display:block;
+      width: 20px;
+      height: 20px;
+    }
+    &.open::before {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1792" height="1792"><path d="M1490 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z"/></svg>');
+      background-size: cover;
+      content: '';
+      display:block;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  nav {
+    background-color: $blue-alt;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 3rem);
+    left: 0;
+    padding: 2rem 0 5rem;
+    position: fixed;
+    top: 3rem;
+    transform: translateX(100%);
+    transition: all .5s ease-in-out;
+    width: 100vw;
+    z-index: 2;
+    &.open {
+      transform: translateX(0);
+    }
+    > a {
+      color: inherit;
+      display: block;
+      font-size: 2rem;
+      font-weight: 200;
+      letter-spacing: 2px;
+      margin: 0 15px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    .download {
+      margin-top: auto;
+    }
+    .badge {
+      margin-right: 0.5rem;
+      margin-top: 0.5rem;
+    }
+  }
+  .logo-wrap { line-height: 0; }
+  .logo {
+    max-width: 100px;
+    position: relative;
+  }
+  @include desktop {
+    #menu-toggle { display: none; }
+    nav {
+      background-color: transparent;
+      color: inherit;
+      flex-direction: row;
+      position: static;
+      width: auto;
+      height: auto;
+      padding: 0;
+      transform: none;
+      transition: none;
+      z-index: 2;
+      a {
+        display: inline-block;
+        font-size: .7rem;
+        font-weight: 200;
+        letter-spacing: 2px;
+        margin: 0 15px;
+        text-transform: uppercase;
+        color: inherit;
+        text-decoration: none;
+      }
+      .download { display: none; }
+    }
+  }
+}

@@ -1,22 +1,34 @@
 extends _layout
 
 block content
-  section
-    h1 Now hiring our future
-    p Matching Teachers and Industry Volunteers
+  section.hero-index
+    .container.medium
+      h1.text-white.text-light Now hiring our future
+      p Matching Teachers and Industry Volunteers
+  section.curve.content-index
     button#play
       <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60">
-        <g fill="none" fill-rule="evenodd">
-          <path fill="#F6921E" d="M59 30c0 16-13 29-29 29S1 46 1 30 14 1 30 1s29 13 29 29"/>
-          <path fill="#FFF" d="M52 30c0 12-10 22-22 22S8 42 8 30 18 8 30 8s22 10 22 22"/>
-          <path stroke="#00B8F1" stroke-width="2" d="M59 30c0 16-13 29-29 29S1 46 1 30 14 1 30 1s29 13 29 29z"/>
-          <path fill="#00B8F1" d="M21.4 41.3V18.7L44 30"/>
-        </g>
+      <g fill="none" fill-rule="evenodd">
+      <path fill="#F6921E" d="M59 30c0 16-13 29-29 29S1 46 1 30 14 1 30 1s29 13 29 29"/>
+      <path fill="#FFF" d="M52 30c0 12-10 22-22 22S8 42 8 30 18 8 30 8s22 10 22 22"/>
+      <path stroke="#00B8F1" stroke-width="2" d="M59 30c0 16-13 29-29 29S1 46 1 30 14 1 30 1s29 13 29 29z"/>
+      <path fill="#00B8F1" d="M21.4 41.3V18.7L44 30"/>
+      </g>
       </svg>
       | Play
-    .parallax
-      .group
-        .layer.back
-          | back
-        .layer.base
-          | base
+    .container.medium
+      .row
+        .col.w40
+          #iphone-index.iphone-layout.device-container.v-margin
+            .device-mockup.iphone6_plus.portrait.white
+              .device
+                .screen
+                  img.img-responsive(src='img/whitephone1.png', alt='')
+        .col.w60
+          h2.v-margin-medium Tomorrow’s innovators depend on you
+          p Download • Connect • Inspire
+          div
+            a.badge(href="/bleh")
+              img(src="/img/app-store-badge.svg", alt="Download on the App Store")
+            a.badge(href="/bleh")
+              img(src="/img/google-play-badge.svg", alt="Get it on Google Play")
