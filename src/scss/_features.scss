@@ -62,7 +62,7 @@
 .content-download { padding: 3rem 0 1rem; }
 
 .bg-feature-1 {
-  background-image: linear-gradient(-180deg, #00B9F1 38%, #3EBFC6 100%);
+  background: url("/img/overlay-stem.png") bottom center/100% no-repeat, linear-gradient(-180deg, #00B9F1 38%, #3EBFC6 100%);
 }
 .beta-heading {
   color: $green;
