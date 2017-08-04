@@ -13,11 +13,9 @@
     "node-sass": "^4.5.3",
     "npm-run-all": "^4.0.2",
     "postcss-cli": "^4.1.0",
-    "postcss-uncss": "^0.15.0",
     "pug-cli": "^1.0.0-alpha6",
     "shx": "^0.2.2",
-    "uglifyjs-folder": "^1.1.0",
-    "uncss": "^0.15.0"
+    "uglifyjs-folder": "^1.1.0"
   },
   "bugs": {
     "url": "https://github.com/BlackrockDigital/startbootstrap-new-age/issues"
