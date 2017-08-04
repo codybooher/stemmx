@@ -29,8 +29,8 @@
   },
   "scripts": {
     "start": "run-p html:dev scss:w bsync",
-    "build": "run-p build:html build:css build:js asset:img",
-    "build:html": "npm run pug -- --out ./dist",
+    "build": "run-p build:html build:js build:css asset:img",
+    "build:html": "npm run html:pug -- --out ./dist",
     "build:css": "run-s html scss postcss",
     "build:js": "uglifyjs-folder src/js/ -e -x .js -o dist/js/",
     "clean": "rimraf node_modules/ dist/*",
