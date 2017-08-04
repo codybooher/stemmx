@@ -131,6 +131,9 @@ $curve-size: 2.5vmax;
   > img { height: 40px; }
 }
 
+// Remove outline on main for skip-link
+#main { outline: none; }
+
 // Device fix
 .device-mockup > .device { z-index: 1; }
 
