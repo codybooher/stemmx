@@ -28,3 +28,12 @@
   &-medium { max-width: 850px; }
   &-large { max-width: 1170px; }
 }
+
+a.skip {
+  background-color: $white;
+  position: absolute;
+  top: .75rem;
+  left: -100000px;
+  z-index: 1;
+  &:focus { left: .75rem; }
+}
