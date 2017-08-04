@@ -1,7 +1,7 @@
 $iphone-offset: 15rem;
 
 .hero-index {
-  background: url("/img/overlay-stem.png") bottom center/100% no-repeat, url("/img/bg-index.jpg") center/cover, #00B9F0;
+  background: url("img/overlay-stem.png") bottom center/100% no-repeat, url("img/bg-index.jpg") center/cover, #00B9F0;
   padding: 1rem 0 2.5rem;
   @include desktop { padding: 2rem 0 $iphone-offset; }
 }

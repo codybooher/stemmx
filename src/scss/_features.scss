@@ -1,5 +1,5 @@
 .hero-features {
-  background: url('/img/bg-features.jpg'), linear-gradient(135deg, rgba(118,203,197,1) 0%,rgba(217,198,168,1) 100%);
+  background: url('img/bg-features.jpg'), linear-gradient(135deg, rgba(118,203,197,1) 0%,rgba(217,198,168,1) 100%);
   background-position: top left;
   background-size: cover;
   @include desktop {
@@ -42,7 +42,7 @@
     > span { flex: 2 0; }
   }
   .img-sprite {
-    background-image:url("/img/sprite-features.png");
+    background-image:url("img/sprite-features.png");
     background-size:100% 303%;
     max-width: 112px;
     width: 50px;
@@ -62,7 +62,7 @@
 .content-download { padding: 3rem 0 1rem; }
 
 .bg-feature-1 {
-  background: url("/img/overlay-stem.png") bottom center/100% no-repeat, linear-gradient(-180deg, #00B9F1 38%, #3EBFC6 100%);
+  background: url("img/overlay-stem.png") bottom center/100% no-repeat, linear-gradient(-180deg, #00B9F1 38%, #3EBFC6 100%);
 }
 .beta-heading {
   color: $green;
