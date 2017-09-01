@@ -6,9 +6,10 @@ block content
   section.curve
     .container.small.row
       h2.col.w100.text-center.v-margin Contact Us
-      form.contact-form.text-center.v-margin-medium
+      form.contact-form.text-center.v-margin-medium(action='https://formspree.io/contact@stemmx.com', method='POST')
         input#name(placeholder='Full Name')
-        input#email(type='email', placeholder='Email')
-        textarea#message(placeholder='Message', rows=5)
-        button.btn.v-margin Submit
-
+        input#email(type='email', placeholder='Email', name='email')
+        textarea#message(placeholder='Message', rows=5, name='message')
+        input(type='hidden', name='_subject',value='Contact Form Email')
+        input(type='hidden', name='_next',value='stemmx.com')
+        input.btn.v-margin(type='submit', value='Submit')
